@@ -19,7 +19,7 @@ public class Playermovement : MonoBehaviour
     {
         float movevertical = Input.GetAxis("Vertical")*15;
         float movehorizontal=Input.GetAxis("Horizontal")*15;
-        rb.velocity = new Vector2(movehorizontal, movevertical);
+        rb.linearVelocity = new Vector2(movehorizontal, movevertical);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
