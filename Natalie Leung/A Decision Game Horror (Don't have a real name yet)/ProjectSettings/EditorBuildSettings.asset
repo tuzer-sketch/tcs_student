@@ -8,4 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Lizzy's Room.unity
+    guid: ac06daab252ee1140b131a76bcfb6e9c
+  - enabled: 1
+    path: Assets/Scenes/Dorms.unity
+    guid: 8af05474609983b47b5769e4e22d8d36
+  - enabled: 1
+    path: Assets/Scenes/Hallway.unity
+    guid: 8967d116ee023a04db9d22f5e9c17320
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
