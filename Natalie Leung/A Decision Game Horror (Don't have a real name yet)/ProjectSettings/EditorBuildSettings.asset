@@ -17,5 +17,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hallway.unity
     guid: 8967d116ee023a04db9d22f5e9c17320
+  - enabled: 1
+    path: Assets/Scenes/Faux.unity
+    guid: 705877bc07c43ec42a8f5746f4877b84
+  - enabled: 1
+    path: Assets/Scenes/Zeyphr.unity
+    guid: cd82127be5099964cae3bd4102c68289
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
