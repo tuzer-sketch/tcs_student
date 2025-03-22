@@ -9,6 +9,7 @@ public class doorscript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene(toScene);
+            Roomhandler.Instance.EnterRoom(toScene);
         }
     }
         
