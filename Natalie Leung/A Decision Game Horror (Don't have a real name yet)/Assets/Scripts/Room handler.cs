@@ -25,6 +25,9 @@ public class Roomhandler : MonoBehaviour
         currentRoomName = newRoomName;
         Debug.Log("Entered: " + currentRoomName);
    }
+   public string getpreviousroom() {
+        return previousRoomName;
+   }
     
 
 }
