@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraABC : MonoBehaviour
 {
     [SerializeField]private Transform target;
     // Start is called before the first frame update

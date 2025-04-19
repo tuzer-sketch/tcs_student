@@ -1,22 +1,29 @@
-using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
+using Unity.VisualScripting;
 
 public class Sounddistance : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private GameObject camera;
+    private AudioSource audio;
+
     void Start()
     {
-      audio = GetComponent<AudioSource();
+      audio = GetComponent<AudioSource>();
+      audio.volume = 0.0f;
+      StartCoroutine(PlaySound(minDistance: 50f));
     }
 
- iEEnumerator PlaySound (boo1 randomize = false, float chance = 0.5f, float minDistance = 1.0f);
- Vector3 distance = Vector3.Distance(Camera.transform.position,transform.position);
- if (Distance < minDistance)
- {
-    void OnAudioFilterRead(float[] data, int channels)
-    {
-        audio.Volume = 1.0f - (distance / minDistance);
-    }
-}
+ IEnumerator PlaySound(float minDistance = 1.0f){
+    float distance = Vector3.Distance(camera.transform.position,transform.position);
+    Debug.Log("Distance: " + distance);
+   if (distance < minDistance)
+   {
+      Debug.Log("Playing sound");
+      audio.volume = 1.0f - 1.0f/(distance / minDistance);
+   }
+     yield return new WaitForSeconds(0.1f);
+ }
+ 
 }
