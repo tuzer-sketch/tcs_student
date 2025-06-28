@@ -15,9 +15,9 @@ public class CameraABC : MonoBehaviour
     {
         
         Vector3 camera_pos = transform.position;
-       Vector3 target_pos = target.transform.position;
+        Vector3 target_pos = target.transform.position;
         camera_pos.x = target_pos.x;
         camera_pos.y = target_pos.y;
-        transform.position= camera_pos;
+        transform.position = camera_pos;
     }
 }

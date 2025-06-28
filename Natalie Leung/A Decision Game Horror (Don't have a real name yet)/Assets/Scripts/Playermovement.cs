@@ -24,7 +24,7 @@ public class Playermovement : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "poor guy gets yeeted")
+        if (collision.gameObject.CompareTag ("poor guy gets yeeted"))
         {
             Destroy(gameObject);
         }

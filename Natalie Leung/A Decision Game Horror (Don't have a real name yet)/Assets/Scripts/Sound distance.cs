@@ -1,6 +1,4 @@
 using UnityEngine;
-using System.Collections;
-using Unity.VisualScripting;
 
 public class Sounddistance : MonoBehaviour
 {
@@ -12,18 +10,19 @@ public class Sounddistance : MonoBehaviour
     {
       audio = GetComponent<AudioSource>();
       audio.volume = 0.0f;
-      StartCoroutine(PlaySound(minDistance: 50f));
+      audio.Play();
     }
 
- IEnumerator PlaySound(float minDistance = 1.0f){
-    float distance = Vector3.Distance(camera.transform.position,transform.position);
-    Debug.Log("Distance: " + distance);
-   if (distance < minDistance)
+   void Update()
    {
-      Debug.Log("Playing sound");
-      audio.volume = 1.0f - 1.0f/(distance / minDistance);
+      float minDistance =08.0f;
+      float distance = Vector3.Distance(camera.transform.position,transform.position);
+      Debug.Log("Distance: " + distance);
+      if (distance < minDistance)
+      {
+         Debug.Log("Playing sound");
+         audio.volume = 1.0f - 1.0f/(minDistance/distance);
+      }
    }
-     yield return new WaitForSeconds(0.1f);
- }
  
 }
