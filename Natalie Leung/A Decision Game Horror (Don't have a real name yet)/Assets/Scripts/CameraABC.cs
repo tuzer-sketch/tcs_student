@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CameraABC : MonoBehaviour
 {
-    [SerializeField]private Transform target;
+    [SerializeField] private Transform target;
     // Start is called before the first frame update
     void Start()
     {

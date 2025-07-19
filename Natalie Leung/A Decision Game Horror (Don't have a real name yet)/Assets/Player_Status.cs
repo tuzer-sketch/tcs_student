@@ -1,3 +1,4 @@
+
 using TMPro;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ public class Player_Status : MonoBehaviour
     {
 
     }
-    void OnCollisionEnter2D(Collision collision)
+    void OnCollisionEnter2D(Collider2D collision)
     {
         Debug.Log("yippee");
         player_health -= 10f;
