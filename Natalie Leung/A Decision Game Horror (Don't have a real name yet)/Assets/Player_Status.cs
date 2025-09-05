@@ -16,7 +16,7 @@ public class Player_Status : MonoBehaviour
     {
 
     }
-    void OnCollisionEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("yippee");
         player_health -= 10f;
