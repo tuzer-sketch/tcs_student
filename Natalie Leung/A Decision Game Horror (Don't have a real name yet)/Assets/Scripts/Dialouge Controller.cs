@@ -33,7 +33,7 @@ public class DialougeController : MonoBehaviour
         var duck=Input.GetKeyDown(KeyCode.Escape);
         if (duck )
         {
-            gameObject.SetActive   (!gameObject.activeSelf); 
+            gameObject.SetActive(!gameObject.activeSelf); 
         }
     }
 }
