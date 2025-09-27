@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 126309571}
   - component: {fileID: 126309570}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: InventoryMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,8 +428,9 @@ GameObject:
   - component: {fileID: 876626909}
   - component: {fileID: 876626908}
   - component: {fileID: 876626907}
+  - component: {fileID: 876626911}
   m_Layer: 5
-  m_Name: InventoryMenu
+  m_Name: PlayerMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -518,6 +519,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &876626911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876626906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1b044cc0aa69648a2d04269e02d44b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &944754054
 GameObject:
   m_ObjectHideFlags: 0
