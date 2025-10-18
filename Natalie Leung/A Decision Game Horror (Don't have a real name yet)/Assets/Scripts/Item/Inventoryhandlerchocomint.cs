@@ -13,12 +13,18 @@ public class Inventoryhandlerchocomint : MonoBehaviour
         invMenu.SetActive(false);
     }
     void DrawItems(){
+
+        int x = 0;
         foreach (ietm item in inventory){
             GameObject itemIcon = new GameObject();
             itemIcon.AddComponent<Image>();
             itemIcon.GetComponent<Image>().sprite=item.icon;
             itemIcon.transform.SetParent(invMenu.transform, false);
-        }
+            x += 1;
+            RectTransform item_pos = itemIcon.GetComponent<RectTransform>();
+            item_pos.anchoredPosition = new Vector2((x*100)-190, 0);
+
+        } 
     }
 
     // Update is called once per frame
