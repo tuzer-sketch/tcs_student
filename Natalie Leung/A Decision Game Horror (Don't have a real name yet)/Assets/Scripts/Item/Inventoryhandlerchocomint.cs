@@ -12,6 +12,10 @@ public class Inventoryhandlerchocomint : MonoBehaviour
         invMenu = transform.Find("InventoryMenu").gameObject;
         invMenu.SetActive(false);
     }
+    void additem(ietm item)
+    {
+
+    }
     void DrawItems(){
 
         int x = 0;
@@ -22,7 +26,7 @@ public class Inventoryhandlerchocomint : MonoBehaviour
             itemIcon.transform.SetParent(invMenu.transform, false);
             x += 1;
             RectTransform item_pos = itemIcon.GetComponent<RectTransform>();
-            item_pos.anchoredPosition = new Vector2((x*100)-190, 0);
+            item_pos.anchoredPosition = new Vector2((x*120)-190, 0);
 
         } 
     }
