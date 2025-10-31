@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Keys
   m_EditorClassIdentifier: 
   itemName: Keys
-  icon: {fileID: 1943325136786430810, guid: fa73a6089deaa1c4dac91c22e96784c3, type: 3}
+  icon: {fileID: 2495861563657132563, guid: b12c835a3a86625469c2abc0adb7a02e, type: 3}
   maxStackSize: 16

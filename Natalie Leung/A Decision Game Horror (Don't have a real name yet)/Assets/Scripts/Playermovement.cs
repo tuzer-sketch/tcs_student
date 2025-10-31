@@ -7,7 +7,7 @@ public class Playermovement : MonoBehaviour
 {
 
     private Rigidbody2D rb;
-
+    public itempickup ehietm;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +17,17 @@ public class Playermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float movevertical = Input.GetAxis("Vertical")*7;
-        float movehorizontal=Input.GetAxis("Horizontal")*7;
+        float movevertical = Input.GetAxis("Vertical") * 7;
+        float movehorizontal = Input.GetAxis("Horizontal") * 7;
         rb.linearVelocity = new Vector2(movehorizontal, movevertical);
+        var pickup = Input.GetButtonDown("pickup");
+        if (pickup)
+        {
+            var inventory = GameObject.FindFirstObjectByType<Inventoryhandlerchocomint>();
+            inventory.additem(ehietm.pcikpu);
+        }
     }
+    
 
     private void OnCollisionStay2D(Collision2D collision)
     {

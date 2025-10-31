@@ -12,9 +12,9 @@ public class Inventoryhandlerchocomint : MonoBehaviour
         invMenu = transform.Find("InventoryMenu").gameObject;
         invMenu.SetActive(false);
     }
-    void additem(ietm item)
+    public void additem(ietm item)
     {
-
+        inventory.Add(item);
     }
     void DrawItems(){
 

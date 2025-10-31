@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Flashlight
   m_EditorClassIdentifier: 
   itemName: Flashlight
-  icon: {fileID: -5829800240912621969, guid: d9b09bbcd8089f14e9b4246bedfd2590, type: 3}
+  icon: {fileID: 2326977090843569639, guid: 6c3869af92e064648a12b53d71861204, type: 3}
   maxStackSize: 16
