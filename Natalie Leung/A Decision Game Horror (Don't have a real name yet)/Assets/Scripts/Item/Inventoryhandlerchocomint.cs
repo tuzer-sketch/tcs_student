@@ -19,6 +19,7 @@ public class Inventoryhandlerchocomint : MonoBehaviour
     void DrawItems(){
 
         int x = 0;
+        int col = 0;
         foreach (ietm item in inventory){
             GameObject itemIcon = new GameObject();
             itemIcon.AddComponent<Image>();
@@ -26,8 +27,12 @@ public class Inventoryhandlerchocomint : MonoBehaviour
             itemIcon.transform.SetParent(invMenu.transform, false);
             x += 1;
             RectTransform item_pos = itemIcon.GetComponent<RectTransform>();
-            item_pos.anchoredPosition = new Vector2((x*120)-190, 0);
-
+            item_pos.anchoredPosition = new Vector2((x * 120) - 190, 3 * col);
+            if (x>4)
+            {
+                x = 0;
+                col += 1;
+            }
         } 
     }
 
