@@ -563,7 +563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb90835f423e7748806905ee41ac6df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pcikpu: {fileID: 0}
+  pcikpu: {fileID: 11400000, guid: d848b30befe7c214b902b0bfeafd0d40, type: 2}
 --- !u!61 &910928476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -855,8 +855,8 @@ Transform:
   m_GameObject: {fileID: 1196926001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.274, y: 3.941, z: 0}
-  m_LocalScale: {x: 0.12, y: 0.22, z: 0.78787}
+  m_LocalPosition: {x: -8.0359, y: 3.7641, z: 0}
+  m_LocalScale: {x: 0.016910424, y: 0.032254472, z: 0.78787}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1008,6 +1008,7 @@ GameObject:
   - component: {fileID: 1688552205}
   - component: {fileID: 1688552204}
   - component: {fileID: 1688552203}
+  - component: {fileID: 1688552206}
   m_Layer: 0
   m_Name: Isometric Diamond
   m_TagString: Untagged
@@ -1125,12 +1126,25 @@ Transform:
   m_GameObject: {fileID: 1688552202}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5014, y: 3.5937, z: 0}
+  m_LocalPosition: {x: -7.509, y: 4.165, z: 0}
   m_LocalScale: {x: 0.015366882, y: 0.01795252, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1688552206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688552202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb90835f423e7748806905ee41ac6df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pcikpu: {fileID: 11400000, guid: c49f203ef4d8078459fa5600eb10347d, type: 2}
 --- !u!1 &1719442139
 GameObject:
   m_ObjectHideFlags: 0

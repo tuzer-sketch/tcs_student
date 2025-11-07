@@ -14,7 +14,15 @@ public class Inventoryhandlerchocomint : MonoBehaviour
     }
     public void additem(ietm item)
     {
-        inventory.Add(item);
+        if (inventory.Contains(item))
+        {
+            inventory.Add(item);
+        }
+
+    }
+    public bool Contains(ietm ohetr)
+    {
+        return inventory.Contains(ohetr);
     }
     void DrawItems(){
 
