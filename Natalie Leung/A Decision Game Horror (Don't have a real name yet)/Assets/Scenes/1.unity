@@ -1706,8 +1706,8 @@ Tilemap:
   - first: {x: 2, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1917,17 +1917,17 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 50
     m_Data: {fileID: 11400000, guid: 9a3b85ea8f5a291488460a54d5e6450e, type: 2}
-  - m_RefCount: 120
+  - m_RefCount: 119
     m_Data: {fileID: 11400000, guid: 4ce68e360abea0a48ad8e294a6813413, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 74edaacaa1004ab48979c3c9eb759601, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 50
     m_Data: {fileID: 161619622, guid: 7a01f36f1830fff449665219aefaf945, type: 3}
-  - m_RefCount: 120
+  - m_RefCount: 119
     m_Data: {fileID: 1475370381, guid: 7a01f36f1830fff449665219aefaf945, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 401735011, guid: 7a01f36f1830fff449665219aefaf945, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 170
     m_Data:
@@ -6100,7 +6100,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.43}
+    oldSize: {x: 0.32, y: 0.55}
     newSize: {x: 0.64, y: 0.43}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
