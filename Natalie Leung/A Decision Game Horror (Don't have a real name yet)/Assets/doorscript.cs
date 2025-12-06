@@ -3,14 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class doorscript : MonoBehaviour
 {
-    [SerializeField] private string toScene;
+    
+    [SerializeField] private Transform todoor;
+    [SerializeField] private int offset;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(toScene);
-            Roomhandler.Instance.EnterRoom(toScene);
+            other.gameObject.transform.position = todoor.position + new Vector3(0, -offset,0);
         }
+       
     }
         
 }

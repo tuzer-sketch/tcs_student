@@ -21,14 +21,14 @@ public class itempickup : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision)
     {
         if  (collision.gameObject.TryGetComponent<Playermovement>(out Playermovement p)){
-            p.ehietm = null;
+            p.pickup = null;
         }
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.TryGetComponent<Playermovement>(out Playermovement p))
         {
-            p.ehietm = this;
+            p.pickup = this;
         }
     }
 }

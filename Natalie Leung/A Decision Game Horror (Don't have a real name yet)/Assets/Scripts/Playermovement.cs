@@ -8,7 +8,7 @@ public class Playermovement : MonoBehaviour
 
     private Rigidbody2D rb;
     public static Playermovement instance;
-    public itempickup ehietm;
+    public itempickup pickup;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,12 +31,12 @@ public class Playermovement : MonoBehaviour
         float movehorizontal = Input.GetAxis("Horizontal") * 7;
         rb.linearVelocity = new Vector2(movehorizontal, movevertical);
         var pickup = Input.GetButtonDown("pickup");
-        if (pickup && ehietm)
+        if (pickup && this.pickup)
         {
             var inventory = GameObject.FindFirstObjectByType<Inventoryhandlerchocomint>();
-            inventory.additem(ehietm.pcikpu);
-            Destroy(ehietm.gameObject);
-            ehietm = null;
+            inventory.additem(this.pickup.pcikpu);
+            Destroy(this.pickup.gameObject);
+            this.pickup = null;
         }
     }
     
