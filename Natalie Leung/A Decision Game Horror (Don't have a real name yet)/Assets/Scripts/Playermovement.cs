@@ -5,7 +5,8 @@ using UnityEngine.UIElements;
 
 public class Playermovement : MonoBehaviour
 {
-
+    Vector3 teleportposition;
+    bool isnexttodoor;
     private Rigidbody2D rb;
     public static Playermovement instance;
     public itempickup pickup;
@@ -38,20 +39,41 @@ public class Playermovement : MonoBehaviour
             Destroy(this.pickup.gameObject);
             this.pickup = null;
         }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            Interact();
+
+        }
     }
-    
+
+    private void Interact()
+    {
+        if (isnexttodoor)
+        {
+            transform.position = teleportposition;
+        }
+        Debug.Log("notnexttodoor");
+
+    }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag ("poor guy gets yeeted"))
+        if (collision.gameObject.CompareTag("poor guy gets yeeted"))
         {
             Destroy(gameObject);
         }
 
     }
 
-    private void FixedUpdate()
+    public void SetTeleportPosition(Vector3 teleportposition)
     {
-
+        this.teleportposition = teleportposition;
+        Debug.Log(teleportposition);
     }
+    public void SetIsNextToDoor(bool state)
+    {
+        isnexttodoor = state;
+    }
+
 }
