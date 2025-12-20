@@ -40,7 +40,7 @@ public class Playermovement : MonoBehaviour
             this.pickup = null;
         }
 
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Interact();
 
